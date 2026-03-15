@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nobody Told Me — The Honest Liveaboard Guide</title>
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '935355239249037');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=935355239249037&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #0f1e2d;
+      color: #f0f0f0;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #0f1e2d 0%, #1B3A5C 100%);
+      padding: 60px 20px 50px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #1E7A8C;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-size: 0.85em;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+    }
+
+    .hero h1 {
+      font-size: 2.2em;
+      color: #ffffff;
+      line-height: 1.35;
+      max-width: 750px;
+      margin: 0 auto 20px;
+    }
+
+    .hero p.sub {
+      font-family: Arial, sans-serif;
+      font-size: 1.1em;
+      color: #AED6F1;
+      max-width: 650px;
+      margin: 0 auto 36px;
+      line-height: 1.75;
+    }
+
+    .book-cover {
+      width: 175px;
+      border-radius: 6px;
+      box-shadow: 0 16px 48px rgba(0,0,0,0.55);
+      margin: 0 auto 36px;
+      display: block;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      background: #1E7A8C;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      font-size: 1.15em;
+      font-weight: bold;
+      padding: 18px 48px;
+      border-radius: 6px;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      transition: background 0.2s;
+      margin-bottom: 14px;
+    }
+
+    .cta-btn:hover { background: #155f6e; }
+
+    .guarantee {
+      font-family: Arial, sans-serif;
+      font-size: 0.85em;
+      color: #7fb3d3;
+      margin-top: 10px;
+    }
+
+    /* HOOK */
+    .hook {
+      background: #112236;
+      padding: 55px 20px;
+    }
+
+    .hook-inner {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .hook h2 {
+      font-size: 1.5em;
+      color: #ffffff;
+      margin-bottom: 28px;
+      text-align: center;
+    }
+
+    .hook blockquote {
+      font-size: 1.15em;
+      font-style: italic;
+      color: #AED6F1;
+      line-height: 1.75;
+      border-left: 4px solid #1E7A8C;
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    .hook .attr {
+      font-family: Arial, sans-serif;
+      font-size: 0.9em;
+      color: #1E7A8C;
+      padding-left: 26px;
+      font-weight: bold;
+    }
+
+    /* WHAT'S INSIDE */
+    .inside {
+      background: #0f1e2d;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .inside h2 {
+      font-size: 1.7em;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .inside .sub2 {
+      font-family: Arial, sans-serif;
+      font-size: 1em;
+      color: #7fb3d3;
+      margin-bottom: 40px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+      max-width: 880px;
+      margin: 0 auto 50px;
+      text-align: left;
+    }
+
+    .feature-card {
+      background: #1B3A5C;
+      border-radius: 10px;
+      padding: 26px 22px;
+      border-left: 4px solid #1E7A8C;
+    }
+
+    .feature-card .icon { font-size: 1.7em; margin-bottom: 10px; }
+
+    .feature-card h3 {
+      font-family: Arial, sans-serif;
+      font-size: 0.95em;
+      color: #AED6F1;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .feature-card p {
+      font-family: Arial, sans-serif;
+      font-size: 0.88em;
+      color: #7fb3d3;
+      line-height: 1.65;
+    }
+
+    /* CASE STUDIES */
+    .cases {
+      background: #112236;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .cases h2 {
+      font-size: 1.6em;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .cases .sub2 {
+      font-family: Arial, sans-serif;
+      font-size: 1em;
+      color: #7fb3d3;
+      margin-bottom: 40px;
+    }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 880px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .case-card {
+      background: #1a2f45;
+      border-radius: 10px;
+      padding: 24px 22px;
+      border-top: 3px solid #C0392B;
+    }
+
+    .case-card .label {
+      font-family: Arial, sans-serif;
+      font-size: 0.72em;
+      color: #C0392B;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .case-card p {
+      font-family: Arial, sans-serif;
+      font-size: 0.92em;
+      color: #c5d8e8;
+      line-height: 1.7;
+    }
+
+    /* STORY */
+    .story {
+      background: #0f1e2d;
+      padding: 60px 20px;
+    }
+
+    .story-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .story h2 {
+      font-size: 1.6em;
+      color: #ffffff;
+      margin-bottom: 24px;
+    }
+
+    .story p {
+      font-family: Arial, sans-serif;
+      font-size: 1em;
+      color: #c5d8e8;
+      line-height: 1.85;
+      margin-bottom: 18px;
+      text-align: left;
+    }
+
+    /* CHECKLIST PREVIEW */
+    .checklist {
+      background: #112236;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .checklist h2 {
+      font-size: 1.6em;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .checklist .sub2 {
+      font-family: Arial, sans-serif;
+      font-size: 1em;
+      color: #7fb3d3;
+      margin-bottom: 36px;
+    }
+
+    .check-list {
+      max-width: 620px;
+      margin: 0 auto 40px;
+      text-align: left;
+    }
+
+    .check-item {
+      font-family: Arial, sans-serif;
+      font-size: 0.97em;
+      color: #c5d8e8;
+      padding: 12px 0;
+      border-bottom: 1px solid #1B3A5C;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      line-height: 1.5;
+    }
+
+    .check-item .tick {
+      color: #1E7A8C;
+      font-size: 1.1em;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* FINAL CTA */
+    .final-cta {
+      background: linear-gradient(135deg, #1B3A5C 0%, #0f1e2d 100%);
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: 1.9em;
+      color: #ffffff;
+      max-width: 640px;
+      margin: 0 auto 16px;
+      line-height: 1.35;
+    }
+
+    .final-cta p {
+      font-family: Arial, sans-serif;
+      font-size: 1em;
+      color: #AED6F1;
+      max-width: 540px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+
+    .price-tag {
+      font-family: Arial, sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .price-tag span {
+      font-size: 0.55em;
+      color: #7fb3d3;
+      font-weight: normal;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #080f18;
+      padding: 24px 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 0.8em;
+      color: #3d5a72;
+    }
+
+    /* MOBILE */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.6em; }
+      .final-cta h2 { font-size: 1.4em; }
+      .cta-btn { padding: 16px 32px; font-size: 1em; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="badge">⚓ The Liveaboard Guide Nobody Else Writes</div>
+    <h1>The Only Liveaboard Guide That Tells You Whether You Should Do It — Not Just How.</h1>
+    <p class="sub">Built from real conversations with people who actually live this life. The mistakes, the real costs, the inspections, the red flags. Everything nobody tells you before you spend $100,000.</p>
+    <img src="cover.png" alt="Nobody Told Me Book Cover" class="book-cover"/>
+    <br/>
+    <a href="https://akashwave468.gumroad.com/l/nobodytoldme" class="cta-btn" onclick="fbq('track', 'InitiateCheckout');">Get the Guide — $9.99</a>
+    
+  </section>
+
+  <!-- HOOK -->
+  <section class="hook">
+    <div class="hook-inner">
+      <h2>This is what the YouTube sailing channels never show you.</h2>
+      <blockquote>
+        "You have to show up and look at each and every boat and know that anything you are told has a 50% chance of being true."
+      </blockquote>
+      <p class="attr">— Experienced liveaboard, r/sailing</p>
+      <br/>
+      <blockquote>
+        "Living on a boat is not a cheaper alternative to living on land. Definitely not — but man it's fun."
+      </blockquote>
+      <p class="attr">— r/liveaboard</p>
+      <br/>
+      <blockquote>
+        "Something at least once a week has to be repaired. Sometimes it's the water, sometimes it's the head, sometimes it's the sump pump."
+      </blockquote>
+      <p class="attr">— Full-time liveaboard, Boston</p>
+    </div>
+  </section>
+
+  <!-- WHAT'S INSIDE -->
+  <section class="inside">
+    <h2>What's Inside the Guide</h2>
+    <p class="sub2">14 chapters. 5 complete checklists. Everything you need before you buy, move aboard, or get out.</p>
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">🔍</div>
+        <h3>The 50-Point Pre-Survey Inspection</h3>
+        <p>What to check yourself — before spending $2,000 on a surveyor. The checklist that's saved readers thousands.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🚩</div>
+        <h3>The Listing Red Flag Dictionary</h3>
+        <p>"Motivated seller." "Sold as-is." "Great bones." Translated into plain English so you know exactly what you're really reading.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">💰</div>
+        <h3>The Real Monthly Cost Breakdown</h3>
+        <p>Marina fees, liveaboard surcharges, maintenance reserves, haul-out costs. The numbers nobody publishes — until now.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📄</div>
+        <h3>The Title Protection Checklist</h3>
+        <p>Every document you need before money changes hands. Because paying in full doesn't mean you legally own the boat.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">❓</div>
+        <h3>The Complete Seller Question Bank</h3>
+        <p>Organized by engine, rigging, hull, electrical, and legal. The questions sellers hope you never ask.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🧭</div>
+        <h3>The Honest Self-Assessment</h3>
+        <p>12 questions that reveal whether this life actually fits yours — before you spend a dollar on a boat.</p>
+      </div>
+    </div>
+    <a href="https://akashwave468.gumroad.com/l/nobodytoldme" class="cta-btn" onclick="fbq('track', 'InitiateCheckout');">Get the Guide — $9.99</a>
+    
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="cases">
+    <h2>Real Situations. Real Mistakes.</h2>
+    <p class="sub2">Every case study in this guide is based on a real situation. These are the ones that hurt most.</p>
+    <div class="case-grid">
+      <div class="case-card">
+        <div class="label">⚠ Case Study</div>
+        <p><strong style="color:#e8f4fb;">The Forestay That Almost Failed.</strong><br/><br/>A boat sold by a sailing club's own certified inspector. The forestay retaining bolt was 1mm from snapping entirely. Not a single cotter pin on any turnbuckle. The buyer was lucky to have an experienced friend along. Most first-time buyers don't.</p>
+      </div>
+      <div class="case-card">
+        <div class="label">⚠ Case Study</div>
+        <p><strong style="color:#e8f4fb;">Paid in Full. Doesn't Own the Boat.</strong><br/><br/>David handed over a cashier's check. Signed a bill of sale. Had the keys. Four months later a maritime attorney found the title was never properly transferred — and there was an undisclosed lien. Resolution: $4,200 in legal fees.</p>
+      </div>
+      <div class="case-card">
+        <div class="label">⚠ Case Study</div>
+        <p><strong style="color:#e8f4fb;">The $800 Antifreeze Bill.</strong><br/><br/>Paul asked the yard to winterize his boat. Estimated two hours of work. The bill arrived: $800. He paid it because he was new and didn't know better. The following year he did it himself for $65.</p>
+      </div>
+      <div class="case-card">
+        <div class="label">⚠ Case Study</div>
+        <p><strong style="color:#e8f4fb;">"I Can Do That Myself. No Problem."</strong><br/><br/>"Well, all the wood needs to be sanded and refinished. I can do that myself, no problem." Six months later... This was the highest-upvoted comment in our entire research thread. 23 people immediately recognized their own experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story">
+    <div class="story-inner">
+      <h2>Why This Guide Exists</h2>
+      <p>This guide was not written by someone trying to sell you a dream. It was not produced by a marina, a boat broker, a sailing school, or anyone with a financial interest in your decision to buy a boat.</p>
+      <p>It was built from real conversations — hundreds of them. From the person who said "something at least once a week has to be repaired" after moving aboard in Boston. From the person who paid in full for a boat and still doesn't legally own it. From the person who looked at their 375hp engines and realized they were paying a fortune in maintenance for power they would never use.</p>
+      <p>Their words are in this guide. Their mistakes become your protection.</p>
+      <p><em style="color:#AED6F1;">"Every other liveaboard guide tells you how to do this life. This one tells you whether you should."</em></p>
+    </div>
+  </section>
+
+  <!-- CHECKLIST PREVIEW -->
+  <section class="checklist">
+    <h2>The Checklists That Save You Money</h2>
+    <p class="sub2">Print them. Take them to the dock. Use them.</p>
+    <div class="check-list">
+      <div class="check-item"><span class="tick">✅</span> 50-Point Pre-Survey Physical Inspection (organized by hull, deck, rigging, engine, electrical, plumbing)</div>
+      <div class="check-item"><span class="tick">✅</span> Documents Checklist — every paper you need before handing over money</div>
+      <div class="check-item"><span class="tick">✅</span> Complete Seller Question Bank — engine, rigging, hull, legal, financial history</div>
+      <div class="check-item"><span class="tick">✅</span> First 90 Days Maintenance Calendar — what to check and when</div>
+      <div class="check-item"><span class="tick">✅</span> The Honest Self-Assessment — 12 questions to answer before spending anything</div>
+      <div class="check-item"><span class="tick">✅</span> Listing Red Flag Dictionary — 16 common phrases translated into plain English</div>
+      <div class="check-item"><span class="tick">✅</span> Full Liveaboard Glossary — every term from surveys, insurance docs, and marina contracts</div>
+    </div>
+    <a href="https://akashwave468.gumroad.com/l/nobodytoldme" class="cta-btn" onclick="fbq('track', 'InitiateCheckout');">Get the Guide — $9.99</a>
+    
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <h2>If you're about to spend $30,000 to $150,000 on a boat — read this first.</h2>
+    <p>Every case study in this guide is a mistake that happened to a real person. Most of them were avoidable. All of them are in this guide so yours don't have to be.</p>
+    <div class="price-tag">$9.99 <span>one-time payment · instant download</span></div>
+    <a href="https://akashwave468.gumroad.com/l/nobodytoldme" class="cta-btn" onclick="fbq('track', 'InitiateCheckout');">Get the Guide Now</a>
+    
+  </section>
+
+  <footer>
+    © Nobody Told Me Guide &nbsp;·&nbsp; Questions? Contact us through Gumroad.
+  </footer>
+
+</body>
+</html>
